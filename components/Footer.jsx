@@ -1,22 +1,14 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import {
-  Box,
-  IconButton,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-  Typography,
-} from '@mui/material';
+import { Box, IconButton, Typography } from '@mui/material';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const links = [
   { url: '/', name: 'home' },
   { url: '/projects', name: 'portfolio' },
-  { url: '/contarct', name: 'contact' },
+  { url: '/contact', name: 'contact' },
 ];
 
 const icons = [<GitHubIcon />, <TwitterIcon />, <LinkedInIcon />];
