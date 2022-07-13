@@ -1,20 +1,9 @@
-import { Divider, Box } from "@mui/material"
-import Navbar from "../components/Navbar"
-import Hero from "../containers/Hero"
-import UserInfoContainer from "../containers/UserInfoContainer"
-import ContactMe from "../components/ContactMe"
-import Footer from "../components/Footer"
+import Home from "../layouts/Home"
 
-export default function Home() {
+export default function index() {
   return (
     <>
-    <Navbar/>
-    <Hero/>
-    <UserInfoContainer/>
-    <Box sx={{margin:'80px 0 80px 0', display:'flex', justifyContent:'center'}}>
-    <ContactMe/>
-    </Box>
-    <Footer/>
+    <Home/>
     </>
   )
 }
