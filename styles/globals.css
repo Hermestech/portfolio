@@ -2,8 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
 }
 
 a {
@@ -13,4 +12,13 @@ a {
 
 * {
   box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Ibarra Real Nova', serif;
+  src: url(../theme/fonts/Ibarra_Real_Nova/IbarraRealNova-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'Public Sans', sans-serif;
+  src: url(../theme/fonts/Public_Sans/PublicSans-VariableFont_wght.ttf);
 }

@@ -18,7 +18,7 @@ const icons = [<GitHubIcon />, <TwitterIcon />, <LinkedInIcon />];
 
 const mapItemsToList = (items) =>
   items.map((item, i) => (
-    <Typography variant='body1' color='white'>
+    <Typography variant='body1' color='white' key={i}>
       {item.toUpperCase()}
     </Typography>
   ));

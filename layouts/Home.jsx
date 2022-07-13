@@ -11,7 +11,7 @@ const Home = () => (
     <UserInfoContainer />
     <Box
       sx={{
-        margin: '80px 0 80px 0',
+        margin: '80px 0 20px 0',
         display: 'flex',
         justifyContent: 'center',
       }}
