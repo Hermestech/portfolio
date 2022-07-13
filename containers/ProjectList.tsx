@@ -15,8 +15,8 @@ type ProjectListProps = {
 }
 
 const mapProjectsToCard = (projects: TProject[]) =>
-  projects.map( project => (
-    <ProjectCard project={project} />
+  projects.map( (project,i) => (
+    <ProjectCard project={project} key={project.id}/>
   ) )
 
 const ProjectList = ({projects}: ProjectListProps): JSX.Element => {

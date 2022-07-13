@@ -6,14 +6,8 @@ import Image from 'next/image';
 const ProjectDetails = ({ project }) => {
   const mapUrlsToCard = (project) =>
     project.attributes.img_urls.map((img, i) => (
-      <Card sx={{ width: '313px', height: '197px' }}>
-        <CardMedia
-          component='img'
-          src={img}
-          width='100%'
-          height='100%'
-          key={i}
-        />
+      <Card sx={{ width: '313px', height: '197px' }} key={i}>
+        <CardMedia component='img' src={img} width='100%' height='100%' />
       </Card>
     ));
 

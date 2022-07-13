@@ -7,6 +7,7 @@ import {
   Button,
   Divider,
 } from '@mui/material';
+import Link from 'next/link';
 
 type ProjectCardProps = {
   project: TProject,
@@ -28,9 +29,11 @@ const ProjectCard = ({project} : ProjectCardProps) => {
           {project.description}
         </Typography>
         <Box>
+          <Link href={`/projects/${project.id}`}>
           <Button variant='outlined' sx={{width:'175px', height:'48px'}}>
             <Typography variant='body1'>VIEW PROJECT</Typography>
           </Button>
+          </Link>
         </Box>
       </CardContent>
     </Card>

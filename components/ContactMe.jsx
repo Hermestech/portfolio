@@ -1,5 +1,5 @@
 import { Box, Typography, Button } from '@mui/material';
-import React from 'react';
+import Link from 'next/link';
 
 const ContactMe = () => {
   return (
@@ -22,9 +22,11 @@ const ContactMe = () => {
         Interested in doing a project together?
       </Typography>
       <Box width='100%'>
-        <Button variant='outlined' sx={{ width: '162px', height: '48px' }}>
-          CONTACT ME
-        </Button>
+        <Link href='/contact'>
+          <Button variant='outlined' sx={{ width: '162px', height: '48px' }}>
+            CONTACT ME
+          </Button>
+        </Link>
       </Box>
     </Box>
   );

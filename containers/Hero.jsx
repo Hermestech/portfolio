@@ -1,5 +1,6 @@
-import { Card, CardMedia, Box, Typography, Button } from '@mui/material';
+import { Card, Box, Typography, Button } from '@mui/material';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -18,7 +19,6 @@ const Hero = () => {
           marginTop: '40px',
           width: '311px',
           height: '271px',
-          background: 'red',
         }}
       >
         <Image src='/bitmap.jpg' width={311} height={271} />
