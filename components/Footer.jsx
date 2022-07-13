@@ -11,16 +11,23 @@ import {
   Typography,
 } from '@mui/material';
 import Image from 'next/image';
+import Link from 'next/link';
 
-const links = ['home', 'portfolio', 'contact'];
+const links = [
+  { url: '/', name: 'home' },
+  { url: '/projects', name: 'portfolio' },
+  { url: '/contarct', name: 'contact' },
+];
 
 const icons = [<GitHubIcon />, <TwitterIcon />, <LinkedInIcon />];
 
 const mapItemsToList = (items) =>
-  items.map((item, i) => (
-    <Typography variant='body1' color='white' key={i}>
-      {item.toUpperCase()}
-    </Typography>
+  items.map(({ url, name }, i) => (
+    <Link href={url} key={i}>
+      <Typography variant='body1' color='white'>
+        {name.toUpperCase()}
+      </Typography>
+    </Link>
   ));
 
 const Footer = () => {
