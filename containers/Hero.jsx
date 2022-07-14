@@ -12,6 +12,7 @@ const Hero = () => {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
+        background: 'red',
       }}
     >
       <Card
@@ -27,11 +28,11 @@ const Hero = () => {
         <Typography variant='h3' fontSize='40px'>
           Hey, I´m Alex Spencer and I love building beautiful webs
         </Typography>
-      </Box>
-      <Box sx={{ width: '85%' }}>
-        <Button variant='outlined' sx={{ width: '200px', height: '48px' }}>
-          ABOUT ME
-        </Button>
+        <Box sx={{ width: '85%' }}>
+          <Button variant='outlined' sx={{ width: '200px', height: '48px' }}>
+            ABOUT ME
+          </Button>
+        </Box>
       </Box>
     </Box>
   );

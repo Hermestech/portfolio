@@ -1,9 +1,7 @@
 import { Divider, Box } from '@mui/material';
-import Navbar from '../components/Navbar';
 import Hero from '../containers/Hero';
 import UserInfoContainer from '../containers/UserInfoContainer';
 import ContactMe from '../components/ContactMe';
-import Footer from '../components/Footer';
 
 const Home = () => (
   <>
