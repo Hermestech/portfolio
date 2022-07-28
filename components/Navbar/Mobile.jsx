@@ -9,6 +9,7 @@ import {
   ListItemButton,
 } from '@mui/material';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import MenuIcon from '@mui/icons-material/Menu';
 
@@ -31,7 +32,7 @@ const Mobile = ({ links }) => {
             justifyContent: 'space-between',
           }}
         >
-          <Typography sx={{ ml: 2 }}>HA</Typography>
+          <Image src={'/logo-footer.png'} width='40px' height={'20px'} />
           <List
             sx={{
               display: { xs: 'none', sm: 'flex' },
