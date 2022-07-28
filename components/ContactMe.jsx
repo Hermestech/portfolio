@@ -1,49 +1,48 @@
-import { Box, Typography, Button } from '@mui/material';
+import { Box, Typography, Button, Container } from '@mui/material';
+import { width } from '@mui/system';
 import Link from 'next/link';
 
 const ContactMe = () => {
   return (
     <Box
       sx={{
-        width: { xs: '311px', sm: '90vw' },
-        height: '214px',
-        display: { xs: 'block', sm: 'flex' },
+        height: { xs: '311px', sm: '200px' },
+        display: 'flex',
         flexDirection: { xs: 'column', sm: 'row' },
-        textAlign: { xs: 'center', sm: 'left' },
+        justifyContent: 'center',
+        alignItems: 'center',
       }}
     >
       <Box
         sx={{
-          width: { xs: '311px', sm: '70%' },
-          height: { xs: '126px', sm: '100%' },
-          padding: { xs: '0 16px  0 16px', md: '0' },
-          display: { xs: 'block', sm: 'flex' },
-          aligItems: 'center',
-          justifyContent: 'center',
-          marginBottom: { xs: '20px', md: '0' },
+          width: '85%',
+          height: '100%',
+          display: { xs: 'flex', sm: 'grid' },
+          flexDirection: 'column',
+          justifyContent: 'space-around',
+          gridTemplateColumns: 'repeat(2,1fr)',
         }}
       >
-        <Typography variant='h4' sx={{ marginTop: { xs: '20px', sm: '20%' } }}>
-          Interested in doing a project together?
-        </Typography>
-      </Box>
-
-      <Box
-        sx={{
-          width: {
-            xs: '100%',
-            md: '50%',
-          },
-          display: { xs: 'block', sm: 'flex' },
-          justifyContent: 'flex-end',
-          alignItems: 'center',
-        }}
-      >
-        <Link href='/contact'>
-          <Button variant='outlined' sx={{ width: '162px', height: '48px' }}>
-            CONTACT ME
-          </Button>
-        </Link>
+        <Box sx={{ paddingRight: { xs: 'none', sm: '200px' } }}>
+          <Typography
+            variant='h4'
+            sx={{
+              fontSize: { xs: '40px', sm: '32px' },
+              textAlign: { xs: 'center', sm: 'left' },
+            }}
+          >
+            Interested in doing a project together?
+          </Typography>
+        </Box>
+        <Box
+          sx={{
+            display: 'flex',
+            alignItems: 'flex-start',
+            justifyContent: { xs: 'center', sm: 'flex-end' },
+          }}
+        >
+          <Button variant='outlined'>CONTACT ME</Button>
+        </Box>
       </Box>
     </Box>
   );

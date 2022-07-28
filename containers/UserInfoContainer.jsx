@@ -10,7 +10,6 @@ const UserInfoContainer = () => {
         width: '100%',
         justifyContent: 'center',
         alignItems: 'center',
-        background: 'red',
       }}
     >
       <UserInfo />

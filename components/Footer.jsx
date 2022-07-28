@@ -27,7 +27,7 @@ const Footer = () => {
     <Box
       sx={{
         width: '100%',
-        height: '354px',
+        height: { xs: '354px', sm: '80px' },
         background: '#33323D',
         display: 'flex',
         justifyContent: 'center',
@@ -37,19 +37,24 @@ const Footer = () => {
     >
       <Box
         sx={{
-          width: '104px',
-          height: '242px',
+          width: { xs: '104px', sm: '85%' },
+          height: { xs: '242px', sm: '100%' },
           display: 'flex',
-          flexDirection: 'column',
+          flexDirection: { xs: 'column', sm: 'row' },
           justifyContent: 'space-between',
-          alignItems: '',
+          alignItems: 'center',
         }}
       >
         <Box>
           <Image src='/logo-footer.png' width={61} height={32} />
         </Box>
         {mapItemsToList(links)}
-        <Box sx={{ width: '100%', display: 'flex' }}>
+        <Box
+          sx={{
+            width: { xs: '100%', sm: '104px' },
+            display: 'flex',
+          }}
+        >
           {icons.map((item, i) => (
             <IconButton key={i} sx={{ padding: '5px', color: 'white' }}>
               {item}

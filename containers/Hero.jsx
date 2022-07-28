@@ -8,30 +8,46 @@ const Hero = () => {
       sx={{
         widht: '100vw',
         height: '100vh',
-        display: 'flex',
+        display: { xs: 'flex', sm: 'grid' },
+        gridTemplateColumns: 'repeat(4,1fr)',
+        gridTemplateRows: 'repeat(3,1fr)',
+        gridTemplateAreas: `"image image image image"
+          "text text image image"
+          "text text image image"
+        `,
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        background: 'red',
+        backgroundImage: 'url(/hero-home.jpg)',
+        backgroundPosition: 'center',
+        backgroundSize: 'contain',
+        backgroundRepeat: 'no-repeat',
       }}
     >
-      <Card
+      <Box
         sx={{
-          marginTop: '40px',
-          width: '311px',
-          height: '271px',
+          background: '#FAFAFA',
+          gridRow: '3 / 4',
+          gridColumn: '1 / 3',
         }}
       >
-        <Image src='/bitmap.jpg' width={311} height={271} />
-      </Card>
-      <Box sx={{ width: '311px', margin: '24px 0 32px 0' }}>
-        <Typography variant='h3' fontSize='40px'>
-          Hey, I´m Alex Spencer and I love building beautiful webs
-        </Typography>
-        <Box sx={{ width: '85%' }}>
-          <Button variant='outlined' sx={{ width: '200px', height: '48px' }}>
-            ABOUT ME
-          </Button>
+        <Box
+          sx={{
+            width: '100%',
+            height: '357px',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-around',
+          }}
+        >
+          <Typography variant='h2'>
+            Hey, I´m Alex Spencer and I love building beautiful websites
+          </Typography>
+          <Box sx={{ width: '100%' }}>
+            <Button variant='contained' sx={{ width: '200px', height: '48px' }}>
+              ABOUT ME
+            </Button>
+          </Box>
         </Box>
       </Box>
     </Box>
@@ -39,3 +55,24 @@ const Hero = () => {
 };
 
 export default Hero;
+{
+  /* <Card
+sx={{
+  marginTop: '40px',
+  width: '311px',
+  height: '271px',
+}}
+>
+<Image src='/bitmap.jpg' width={311} height={271} />
+</Card>
+<Box sx={{ width: '311px', margin: '24px 0 32px 0' }}>
+<Typography variant='h3' fontSize='40px'>
+  Hey, I´m Alex Spencer and I love building beautiful webs
+</Typography>
+<Box sx={{ width: '85%' }}>
+  <Button variant='outlined' sx={{ width: '200px', height: '48px' }}>
+    ABOUT ME
+  </Button>
+</Box>
+</Box> */
+}

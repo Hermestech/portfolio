@@ -1,6 +1,7 @@
 import { Box } from '@mui/material';
 import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer';
+import ContactMe from '../components/ContactMe';
 
 const Layout = ({ children }) => (
   <>
@@ -19,6 +20,7 @@ const Layout = ({ children }) => (
     >
       {children}
     </Box>
+    <ContactMe />
     <Footer />
   </>
 );

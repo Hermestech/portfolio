@@ -8,27 +8,42 @@ import {
   Typography,
 } from '@mui/material';
 
-const UserInfo = () => {
-  return (
-    <Card
+const UserInfo = () => (
+  <Card
+    sx={{
+      width: { xs: '311px', sm: '90%' },
+      display: 'flex',
+      flexDirection: { xs: 'column', sm: 'row' },
+      gap: { xs: '0', sm: '32px' },
+    }}
+  >
+    <CardMedia
+      component='img'
+      src='https://i.imgur.com/t8qXd3Q.png'
       sx={{
-        width: { xs: '311px', sm: '90%' },
+        width: { xs: '311px', sm: '40%' },
+        height: { xs: '346px', sm: '600px' },
+      }}
+    />
+
+    <Divider sx={{ margin: '32px 0 32px 0' }} />
+    <CardContent
+      sx={{
+        width: '100%',
         display: 'flex',
-        flexDirection: { xs: 'column', sm: 'row' },
-        gap: { xs: '0', sm: '32px' },
+        justifyContent: 'center',
+        alignItems: 'center',
       }}
     >
-      <CardMedia
-        component='img'
-        src='https://i.imgur.com/t8qXd3Q.png'
+      <Box
         sx={{
-          width: { xs: '311px', sm: '281px' },
-          height: { xs: '346px', sm: '600px' },
+          width: {
+            xs: '100%',
+            sm: '305px',
+          },
+          height: { xs: '100%', sm: '502px' },
         }}
-      />
-
-      <Divider sx={{ margin: '32px 0 32px 0' }} />
-      <CardContent>
+      >
         <Typography variant='h4' sx={{ paddingBottom: '24px' }}>
           About Me
         </Typography>
@@ -53,9 +68,9 @@ const UserInfo = () => {
             GO TO MY PORTFOLIO
           </Button>
         </Box>
-      </CardContent>
-    </Card>
-  );
-};
+      </Box>
+    </CardContent>
+  </Card>
+);
 
 export default UserInfo;
