@@ -34,10 +34,11 @@ const Hero = () => {
         <Box
           sx={{
             width: '100%',
-            height: '357px',
+            height: { xs: '80vh', md: '357px' },
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-around',
+            textAlign: { xs: 'center', md: 'left' },
           }}
         >
           <Typography variant='h2'>

@@ -10,18 +10,40 @@ import {
 import Link from 'next/link';
 
 type ProjectCardProps = {
-  project: TProject,
+  project: TProject;
 };
 
-const ProjectCard = ({project} : ProjectCardProps) => {
+const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
-    <Card sx={{ width: '311px', height: '700px' }} key={project.id}>
+    <Card
+      sx={{
+        width: { xs: '311px', md: '80vw' },
+        height: { xs: '700px', md: '500px' },
+        display: 'flex',
+        flexDirection: { xs: 'column', md: 'row' },
+        '&:nth-child(even)': {
+          flexDirection: { xs: 'column', md: 'row-reverse' },
+        },
+      }}
+      key={project.id}
+    >
       <CardMedia
-       component="img"
-       src={project.img_url}
-       sx={{ width: '311px', height: '288px' }}/>
+        component='img'
+        src={project.img_url}
+        sx={{
+          width: { xs: '311px', md: '50%' },
+          height: { xs: '288px', md: '100%' },
+        }}
+      />
       <Divider sx={{ margin: '32px 0 24px 0' }} />
-      <CardContent>
+      <CardContent
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          paddingLeft: { xs: '0', md: '10%' },
+        }}
+      >
         <Typography variant='h4' sx={{ marginBottom: '24px' }}>
           {project.title_project}
         </Typography>
@@ -30,9 +52,9 @@ const ProjectCard = ({project} : ProjectCardProps) => {
         </Typography>
         <Box>
           <Link href={`/projects/${project.id}`}>
-          <Button variant='outlined' sx={{width:'175px', height:'48px'}}>
-            <Typography variant='body1'>VIEW PROJECT</Typography>
-          </Button>
+            <Button variant='outlined' sx={{ width: '175px', height: '48px' }}>
+              <Typography variant='body1'>VIEW PROJECT</Typography>
+            </Button>
           </Link>
         </Box>
       </CardContent>

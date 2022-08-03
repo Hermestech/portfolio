@@ -43,15 +43,6 @@ const ProjectDetails = ({ project }) => {
         >
           {mapUrlsToCard(project)}
         </Box>
-        <Box
-          sx={{
-            margin: '80px 0 20px 0',
-            display: 'flex',
-            justifyContent: 'center',
-          }}
-        >
-          <ContactMe />
-        </Box>
       </Box>
     </Box>
   );
