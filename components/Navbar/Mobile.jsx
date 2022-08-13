@@ -30,14 +30,18 @@ const Mobile = ({ links }) => {
           sx={{
             display: 'flex',
             justifyContent: 'space-between',
+            marginLeft: { xs: 'none', md: '7%' },
           }}
         >
-          <Image src={'/logo-footer.png'} width='40px' height={'20px'} />
+          <Link href={'/'} sx={{ cursor: 'pointer' }}>
+            <Image src={'/logo-footer.png'} width='40px' height={'20px'} />
+          </Link>
           <List
             sx={{
               display: { xs: 'none', sm: 'flex' },
-              width: '50%',
+              width: '20%',
               height: '32px',
+              marginRight: { xs: 'none', md: '7%' },
               justifyContent: 'space-between',
             }}
           >

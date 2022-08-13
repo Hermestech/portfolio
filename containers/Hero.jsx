@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <Box
       sx={{
-        widht: '100vw',
+        widt: '100%',
         height: '100vh',
         display: { xs: 'flex', sm: 'grid' },
         gridTemplateColumns: 'repeat(4,1fr)',
@@ -34,7 +34,7 @@ const Hero = () => {
         <Box
           sx={{
             width: '100%',
-            height: { xs: '80vh', md: '357px' },
+            height: { xs: '70vh', md: '357px' },
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-around',

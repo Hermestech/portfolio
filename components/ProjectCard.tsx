@@ -17,7 +17,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <Card
       sx={{
-        width: { xs: '311px', md: '80vw' },
+        width: { xs: '311px', md: '100%' },
         height: { xs: '700px', md: '500px' },
         display: 'flex',
         flexDirection: { xs: 'column', md: 'row' },
@@ -41,7 +41,6 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
-          paddingLeft: { xs: '0', md: '10%' },
         }}
       >
         <Typography variant='h4' sx={{ marginBottom: '24px' }}>

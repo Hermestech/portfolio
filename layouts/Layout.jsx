@@ -13,7 +13,6 @@ const Layout = ({ children }) => (
         flexDirection: 'column',
         justifyContent: 'space-between',
         margin: 'auto',
-        // paddingTop: { xs: '117px', md: '144px' },
         paddingBottom: '85px',
         maxWidth: '1280px',
       }}
