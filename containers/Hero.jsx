@@ -1,6 +1,4 @@
-import { Card, Box, Typography, Button } from '@mui/material';
-import Image from 'next/image';
-import Link from 'next/link';
+import { Box, Typography, Button } from '@mui/material';
 
 const Hero = () => {
   return (
@@ -41,11 +39,11 @@ const Hero = () => {
             textAlign: { xs: 'center', md: 'left' },
           }}
         >
-          <Typography variant='h2'>
+          <Typography variant='h1'>
             Hey, I´m Alex Spencer and I love building beautiful websites
           </Typography>
           <Box sx={{ width: '100%' }}>
-            <Button variant='contained' sx={{ width: '200px', height: '48px' }}>
+            <Button variant='contained' color='primary'>
               ABOUT ME
             </Button>
           </Box>
@@ -56,24 +54,3 @@ const Hero = () => {
 };
 
 export default Hero;
-{
-  /* <Card
-sx={{
-  marginTop: '40px',
-  width: '311px',
-  height: '271px',
-}}
->
-<Image src='/bitmap.jpg' width={311} height={271} />
-</Card>
-<Box sx={{ width: '311px', margin: '24px 0 32px 0' }}>
-<Typography variant='h3' fontSize='40px'>
-  Hey, I´m Alex Spencer and I love building beautiful webs
-</Typography>
-<Box sx={{ width: '85%' }}>
-  <Button variant='outlined' sx={{ width: '200px', height: '48px' }}>
-    ABOUT ME
-  </Button>
-</Box>
-</Box> */
-}

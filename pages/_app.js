@@ -1,8 +1,7 @@
 import Layout from '../layouts/Layout'
-import { ThemeProvider, CssBaseline as CssReset } from '@mui/private-theming'
+import { ThemeProvider } from '@mui/material'
 import {theme} from '../theme/theme'
 import '../styles/globals.css'
-
 
 function MyApp({ Component, pageProps }) {
 

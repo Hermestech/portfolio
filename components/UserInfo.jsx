@@ -64,7 +64,7 @@ const UserInfo = () => (
             paddingBottom: { xs: '48px', sm: '0' },
           }}
         >
-          <Button sx={{ width: '202px', height: '48px' }} variant='outlined'>
+          <Button variant='outlined' sx={{ background: 'red' }}>
             GO TO MY PORTFOLIO
           </Button>
         </Box>

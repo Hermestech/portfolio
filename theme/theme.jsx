@@ -1,15 +1,15 @@
-import { createTheme } from '@mui/material';
+import { createTheme, Theme } from '@mui/material';
 
 export const theme = createTheme({
   palette: {
     mode: 'light',
     primary: {
-      main: '#5FB4A2',
+      main: '#FAFAFA',
       light: '#203A4C',
       dark: '#33323D',
     },
     secondary: {
-      main: '#FAFAFA',
+      main: '#5FB4A2',
       light: '#EAEAEB',
       dark: '#F43030',
     },
@@ -47,6 +47,19 @@ export const theme = createTheme({
       fontWeight: '400',
       fontSize: '15px',
       lineHeight: '30px',
+    },
+  },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          borderRadius: '15px',
+          textTransform: 'none',
+          overflowWrap: 'normal',
+          padding: '10px, 24px, 10px, 24px',
+          gap: '10px',
+        },
+      },
     },
   },
 });

@@ -17,7 +17,11 @@ const Mobile = ({ links }) => {
   const mapItemsToList = (items) =>
     items.map(({ url, name }, i) => (
       <Link href={url} key={i}>
-        <Typography variant='body1' color='white'>
+        <Typography
+          variant='body1'
+          color='black'
+          sx={{ cursor: 'pointer', '&:hover': { color: '#5FB4A2' } }}
+        >
           {name.toUpperCase()}
         </Typography>
       </Link>
@@ -25,7 +29,7 @@ const Mobile = ({ links }) => {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position='static'>
+      <AppBar position='static' sx={{ background: 'white' }}>
         <Toolbar
           sx={{
             display: 'flex',
@@ -34,7 +38,7 @@ const Mobile = ({ links }) => {
           }}
         >
           <Link href={'/'} sx={{ cursor: 'pointer' }}>
-            <Image src={'/logo-footer.png'} width='40px' height={'20px'} />
+            <Image src={'/logo-nav.png'} width='40px' height={'20px'} />
           </Link>
           <List
             sx={{
